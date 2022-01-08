@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Visulization - Learning Made Easy</title>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets\css\queueviz.css">
+
+
+</head>
+
+<body>
+    <!-- --------Header-------- -->
+    <header>
+        <div class="main1">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>.DSV</h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="stack.html">Stack</a></li>
+                <li><a href="queue.html">Queue</a></li>
+                <li><a href="tree.html">Tree</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <button id="launch"><span>Instructions</span></button>
+    <div id="popup">
+        <div class="conatiner-shadow">
+            <span class="close">&times;</span>
+            <h2 style="color:#777;">Instructions :</h2>
+            <ul id="instructions">
+                <h3 style="text-align: left;color:#777;">Implementation of Queue -</h3>
+                <p class="code-line" style="text-align: justify; font-size: 18px; line-height: 24px;color:#777;">
+                    In queue implementation, the queue is formed by using the array. All
+                    the operations regarding the queue are performed using arrays. Lets
+                    see how each operation can be implemented on the queue using array
+                    data structure.Some of the operations are listed below . Some of the
+                    steps and operations are listed below
+                </p>
+                <li class="list-items">
+                    Adding an element onto the stack (enqueue operation)
+                </li>
+                <li class="list-items">
+                    Deletion of an element from a stack (dequeue operation)
+                </li>
+            </ul>
+            <!-- Actions -->
+            <div class="button1-container">
+                <a href="#tree-con">
+                    <input type="button" name="start" value="Create your own Queue?" onclick="input()"
+                        class="button1 button1-purple" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------Queue Start-------- -->
+
+    <!-- <div class="wrapper">
+
+
+        <input type="number" maxlength=10 placeholder='Enter value to enqueue' id="q" name="q" onfocus="this.value=''"
+            class="in_field">
+
+        <div class="button-class">
+            <button class="button" onclick="myFunction()">Enqueue</button>
+            <button class="button" onclick="myFunction2()">Dequeue</button>
+        </div>
+    </div> -->
+
+    <div id="tree-con">
+    <!-- ================ draggable input box =============== -->
+    <div id="moveable">
+        <div id="handle">
+            <span class="dragcontent" style="color: #ffff;">
+                Drag me Anywhere
+            </span>
+        </div>
+        <p style="text-align: center; color: #9900cc; padding-top: 20px;">Enter the values to perform Queue
+            Operations
+        </p>
+        <!-- Form Inputs -->
+        <div class="inputs">
+            <!-- ====== pushing element ====== -->
+            <div class="form-row">
+                <input type="text" id="q" name="q" class="input" placeholder="Enter Element" autocomplete="false" onfocus="this.value=''"
+                    required />
+            </div>
+
+            <!-- ======== popping element ======== -->
+            <div class="form-row">
+                <input type="submit" name="push-btn" value="Enqueue" onclick="myFunction()"
+                    class="btn btn-stroke push-btn" />
+                <input type="button" id="pop-item" name="pop-item" value="Dequeue" onclick="myFunction2()"
+                    class="btn btn-stroke pop-btn" />
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- =============== draggable box ends here ============ -->
+
+
+    <div class="box">
+        <div class="visualization">
+            <table class="table1" height="55px" width="100%" border= 2px style="text-align:center; table-layout:fixed; border: 0px solid black;color: black;">
+                <tr id="myRow">
+                    <center>
+
+                    </center>
+                </tr>
+            </table>
+            <table class="table2" height="55px" width="100%" border="0">
+                <tr id="heading">
+                </tr>
+            </table>
+        </div>
+        <center>
+        <span>Queue</span>
+        </center>
+
+        <div id="algo-box">
+            <li id="current_algo" class="algo-steps">
+                >> INIT_STACK (STACK, TOP) <br />
+                <br />
+
+                Algorithm to initialize a stack using array. <br />
+                TOP points to the top-most element of stack.<br />
+                <br /><br />
+                1) TOP: = 0; 2) Exit
+            </li>
+        </div>
+
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social">
+            <li><a href="">
+                    <ion-icon name="logo-facebook"></ion-icon></i>
+                </a></li>
+            <li><a href="">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            <li><a href="">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li><a href="">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a></li>
+
+        </ul>
+        <ul class="menu">
+            <li><a href="stack.html">Stack</a></li>
+            <li><a href="queue.html">Queue</a></li>
+            <li><a href="tree.html">Tree</a></li>
+        </ul>
+        <p>©2021 | Made By Zeel Shah</p>
+
+    </div>
+
+
+</body>
+
+
+<script src="assets\vendor\queueviz.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

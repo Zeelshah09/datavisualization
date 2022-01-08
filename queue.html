@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Sofia|Merriweather' rel='stylesheet'>
+
+    <!-- CSS File Link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Data Structure Visualization - Learning Made Easy</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>.DSV</h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="stack.html">Stack</a></li>
+                <li><a href="tree.html">Tree</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main-row">
+            <div class="row1">
+                <div class="containers_stack">
+                    <div class="cards" style="  width:750px;height:720px;">
+                        <div class="boxes">
+                            <div class="contents">
+                                <h2>Queue</h2>
+                                <p>A queue is a FIFO (First-In, First-Out) data structure in which the element that is inserted first is the first one to be taken out.<br><br>
+
+                                    The elements in a queue are added at one end called the REAR and removed from the other end called the FRONT.<br><br>
+
+                                    Queues can be implemented by using either arrays or linked lists.<br><br>
+                                    Queues can be easily represented using linear arrays. As stated earlier, every queue has front and rear variables that point to the position from where deletions and insertions can be done, respectively.<br><br>
+                                    Before inserting an element in a queue, check for overflow conditions. An overflow will occur when an element is inserted into a queue that is already full. When REAR = MAX – 1, where MAX is the size of the queue, Then overflow condition occurs.<br><br>
+                                    Similarly, before deleting an element from a queue, check for underflow conditions. An underflow condition occurs when delete of an element is made from a queue that is already empty. If FRONT = –1 and REAR = –1, it means there is no element in the queue.
+                                    The process of inserting an element in the queue is called enqueue, and the process of deleting an element from the queue is called dequeue.
+                                </p>
+                                    <a href="queueviz.html">Visualise..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img" >
+                    <img style="width:500px;height:500px;"src="assets\img\queue.png">
+                </div>
+            </div>
+            
+            <div class="row1">
+
+                <div class="img" >
+                    <img style="width:700px; height:500px;" src="assets\img\call center.png">
+                </div>
+
+                <div class="containers_stack float-right">
+                    <div class="cards">
+                        <div class="boxes">
+                            <div class="contents">
+                                <h2>Application</h2>
+                                <p>CPU scheduling, Disk Scheduling<br><br>
+
+                                    When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc <br><br>
+                                    Handling of interrupts in real-time systems.<br><br>
+                                    Call Center phone systems use Queues to hold people calling them in order.</p>
+                                    <a href="queueviz.html">Visualise..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+        <div class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social">
+                <li><a href="">
+                        <ion-icon name="logo-facebook"></ion-icon></i>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li><a href="">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+
+            </ul>
+            <ul class="menu">
+                <li><a href="stack.html">Stack</a></li>
+                <li><a href="queue.html">Queue</a></li>
+                <li><a href="tree.html">Tree</a></li>
+            </ul>
+            <p>©2021 | Made By Zeel Shah</p>
+
+        </div>
+
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

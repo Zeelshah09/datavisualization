@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather';
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #9900cc transparent;
+    
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #9900cc;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9900cc;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: #9900cc;
+    visibility: hidden;
+  }
+body{
+    width:100%;
+    background-color: #f2f3f7;
+ 
+}
+
+/* ---------------Header---------------- */
+header{
+    width:100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    background:none;
+    /* padding:2% 5%; */
+}
+.main{
+    max-width: 2000px;
+    padding: 0px 50px;
+    margin:auto;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    position:relative;
+    background:none;
+    
+}
+.main .logo{
+    float: left;
+    width:200px;
+    height:70px;
+    margin-top:30px;
+    margin-left: 5%;
+    background:none;
+}
+
+.logo  h1{
+    color:#9900cc;
+    width:100%;
+}
+ul{
+    list-style-type: none;
+    float:right;
+    margin-top:30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 1;
+    position:relative;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background:none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #9900cc;
+    padding:5px 5px;
+}
+
+span{
+    color:#9900cc;
+}
+header .title{
+    width:100%;
+    margin-left: 5%;
+
+}
+.head{
+    width:50%;
+    height:40%;
+    position:absolute;
+    margin-top:10%;
+}
+.head h1{ 
+    width:80%;
+    font-size: 50px;
+    line-height:120%;
+    text-transform: uppercase;
+}
+.head p{ 
+    width:80%;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+button{
+    margin-top:5%;
+    width:150px;
+    height:40px;
+    margin-bottom: 5%;
+    color:#9900cc;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border:0;
+    background-color: #f2f3f7;
+    box-shadow:  -2px -2px 8px #ffffff70, 
+                 1px 2px 5px #00000070;
+    transition:0.6s;
+
+}
+
+
+button:hover{
+    transition:0.6s;
+    box-shadow: inset -2px -2px 8px #ffffff70, 
+                inset  2px 2px 2px #00000070;   
+}
+
+button:hover span{
+    display:inline-block;
+    transform:scale(0.98);
+}
+a{
+    text-decoration: none;
+}
+#particles-js{
+    width:100%;
+}
+
+canvas{
+    margin-top:-5%;
+}
+/* ----------------Header End------------ */
+
+/* ----------------Data Structure Cards----------- */
+.row{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top:5%;
+    margin-bottom:10%;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width:1200px;
+    flex-wrap: wrap;
+    padding:40px 0;
+}
+
+.container .card{
+    position: relative;
+    width:320px;
+    height:440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius:15px;
+    margin:30px;
+    transition: 0.5s;
+}
+.container .card .box{
+    position: absolute;
+    top:20px;
+    left:20px;
+    right:20px;
+    bottom:20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    transition: 0.5s;
+}
+.container .card:hover .box{
+    transition: 0.5s;
+    transform:translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    background:linear-gradient(45deg,#e699ff,#9900cc);
+}
+.container .card .box .content{
+    padding:20px;
+    text-align: center;
+    
+}
+.container .card .box .content h2{
+    font-size: 1.8em;
+    color:#777;
+    z-index: 1;
+    margin:5%;
+    transition:0.2s;
+}
+.container .card:hover .box .content h2{
+    color:#ffffff
+}
+.container .card .box .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color:#777;
+    z-index:1;
+    transition: 0.2s;
+}
+.container .card:hover .box .content p{
+    color:#ffffff
+}
+
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding:8px 20px;
+    background:#9900cc;
+    margin-top:5%;
+    border-radius:20px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container .card:hover .box .content a{
+    background:#ffffff;
+    color:#9900cc;
+}
+/* ----------------Data Structure Cards End----------- */
+/* --------------Footer--------- */
+.footer{
+    position: relative;
+    width: 100%;
+    background: #9900cc;
+    min-height:100px;
+    padding:20px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    flex-direction: column;
+}
+
+.footer .social, .footer .menu{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+    flex-wrap: wrap;
+}
+
+.footer .social li,.footer .menu li{
+    list-style:none;
+}
+.footer .social li a,.footer .menu li a{
+    font-size: 20px;
+    color: #fff;
+    margin:0 10px;
+    display:inline-block;
+    transition: 0.5s;
+}
+
+.footer .social li a:hover{
+    transform: translateY(-10px);
+}
+.footer .menu li a{
+    font-size: 18px;
+    color: #fff;
+    margin:0 10px;
+    display:inline-block;
+    transition: 0.5s;
+    display:inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+.footer .menu li a:hover{
+    opacity: 1;
+}
+.footer p{
+    color:#fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+
+.footer .wave{
+    position: absolute;
+    top:-100px;
+    left: 0;
+    width:100%;
+    height:100px;
+    background-image: url("https://sahilshukla279.github.io/hosted-assest/wave.png");
+    background-size: 1000px 100px;
+
+}
+.footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+.footer .wave#wave2{
+    z-index: 1000;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+.footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+.footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave {
+    0%{
+        background-position-x:1000px ;
+    }
+    100%{
+        background-position-x:0px ;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%{
+        background-position-x:0px ;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}
+/* --------------Footer Ends--------- */
+
+/* -----------Stack.html----------- */
+
+.main-row{
+    margin:5%;
+    margin-bottom: 10%;
+    min-height: 100vh;    
+}
+
+ .row1{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.row1 .img{
+    width:400px;
+    height: 400px;
+    margin:10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.img img{
+    width:400px;
+    height:400px;
+}
+
+.containers_stack{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width:1200px;
+    flex-wrap: wrap;
+    padding:40px 0;
+    
+}
+
+
+.containers_stack .cards{
+    position: relative;
+    width:620px;
+    height:520px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius:15px;
+    margin:30px;
+    transition: 0.5s;
+}
+
+.containers_stack .cards .boxes{
+    position: absolute;
+    top:20px;
+    left:20px;
+    right:20px;
+    bottom:20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.containers_stack .cards .boxes .contents{
+    padding:20px;
+    text-align: center;
+    
+}
+.containers_stack .cards .boxes .contents h2{
+    font-size: 1.8em;
+    color:#777;
+    z-index: 1;
+    margin:5%;
+    transition:0.2s;
+}
+
+.containers_stack .cards .boxes .contents p{
+    font-size: 1em;
+    font-weight: 300;
+    color:#777;
+    z-index:1;
+    transition: 0.2s;
+    text-align: justify;
+}
+
+
+.containers_stack .cards .boxes .contents a{
+    position: relative;
+    display: inline-block;
+    padding:8px 20px;
+    background:#9900cc;
+    margin-top:5%;
+    border-radius:20px;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:400;
+    opacity: 0.5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition:0.2s;
+} 
+
+.containers_stack .cards:hover .boxes .contents a{
+    opacity: 1;
+}
+/* -----------------Stack.html End---------------- */

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Visulization - Learning Made Easy</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="assets\css\bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.0.0/css/bootstrap-slider.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="assets\css\tree.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<!-- --------Header-------- -->
+    <header>
+        <div class="main1">
+            <div class="logo">
+               <a href="index.html"> <h1>.DSV</h1></a>
+            </div>
+            <ul>
+                <li><a href="stack.html">Stack</a></li>
+                <li><a href="queue.html">Queue</a></li>
+                <li><a href="tree.html">Tree</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+<!-- -----------Instructions Button---------- -->
+
+    <button id="launch"><span>Instructions</span></button>
+    <div id="popup">
+        <div class="conatiner-shadow">
+            <span class="close">&times;</span>
+            <h2 style="color:#777;">Instructions :</h2>
+            <ul id="instructions">
+                <h3 style="text-align: left;color:#777;">Implementation of Binary Search Tree -</h3>
+                <p class="code-line" style="text-align: justify; font-size: 18px; line-height: 24px;color:#777;">
+                    In binary search tree implementation, the tree is formed by using the node. All
+                    the operations regarding the BST are performed using tree. Lets
+                    see how each operation can be implemented on the BST using tree
+                    data structure.Some of the operations are listed below . Some of the
+                    steps and operations are listed below
+                </p>
+                <li class="list-items">
+                    Insert: insert a node in the tree.
+                </li>
+                <li class="list-items">
+                    Search: Searches for a node in the tree.
+                </li>
+                <li class="list-items">
+                    Delete: deletes a node from the tree.
+                </li>
+            </ul>
+            <!-- Actions -->
+            <div class="button1-container">
+                <a href="#tree-con">
+                    <input type="button" name="start" value="Create your own Binary Search Tree?" onclick="input()"
+                        class="button1 button1-purple" />
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- ------------ Binary Search tree Insertion Button------------- -->
+   <div class="tree-con" id="tree-con">
+       <div class="svg-con">
+        <h3 style="text-align: left;color:#9900cc;font-weight:bold">Implementation of Binary Search Tree-</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" id="svg" class="svg" shape-rendering="auto"></svg>
+        </div>
+    
+                <div class="sidebar-offcanvas" id="sidebar" >
+                    <div class="list-group">
+                        <span class="span">
+                            Enter Values Below
+                        </span>
+                        <div class="list-group-item">
+                            <form class="form-inline" id="addNodeForm" role="form">
+                                <div class="form-group">
+                                    <label for="addNode"> Insert Node:</label>
+                                    <input type="number" class="form-control" id="addNode">
+                                </div>
+                                <button type="submit" class="button" onclick="insert()">Insert</button>
+                            </form>
+                        </div>
+
+                        <div class="list-group-item">
+                            <form class="form-inline" id="deleteNodeForm" role="form">
+                                <div class="form-group">
+                                    <label for="deleteNode"> Delete Node:</label>
+                                    <input type="number" class="form-control" id="deleteNode">
+                                </div>
+                                <button type="submit" class="button" onclick="delet()">Delete</button>
+                            </form>
+                        </div>
+
+                        <div class="list-group-item">
+                            <form class="form-inline" id="searchForNodeForm" role="form">
+                                <div class="form-group">
+                                    <label for="searchForNode">Search Node:</label>
+                                    <input type="number" class="form-control" id="searchForNode">
+                                </div>
+                                <button type="submit" class="button" onclick="search()">Search</button>
+                            </form>
+                        </div>
+
+
+
+
+
+                        <div class="list-group-item" style="border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;">
+                            <form class="form-inline" id="resetZoom" role="form">
+                                <button type="submit" class="button" onclick="resetPage()">Clear</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="algo-box">
+                        <li id="current_algo" class="algo-steps">
+                            >> INIT_TREE (TREE) <br />
+                            <br />
+    
+                            Algorithm to initialize a tree. <br /><br /><br />
+                            1) TREE: = 0; 2) Exit
+                        </li>
+                    </div>
+                </div> 
+                
+                
+        </div>
+</div>
+
+<!-- --------Footer------------ -->
+
+<div class="footer">
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social">
+        <li><a href="">
+                <ion-icon name="logo-facebook"></ion-icon></i>
+            </a></li>
+        <li><a href="">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        <li><a href="">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+        <li><a href="">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        <li><a href="">
+                <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+
+    </ul>
+    <ul class="menu">
+        <li><a href="stack.html">Stack</a></li>
+        <li><a href="queue.html">Queue</a></li>
+        <li><a href="tree.html">Tree</a></li>
+    </ul>
+    <p>©2021 | Made By Zeel Shah</p>
+
+</div>
+
+    <script src="assets\vendor\jquery-3.5.1.min.js"></script>
+    <script src="assets\vendor\bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.0.0/bootstrap-slider.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+    <script src="assets\vendor\bstvisual.js"></script>
+    <script>
+        //Refresh the page, clear the tree
+        function resetPage() {
+            location.reload();
+        }
+
+        $(document).ready(function () {
+            $('[data-toggle=offcanvas]').click(function () {
+                $('.row-offcanvas').toggleClass('active');
+            });
+            $('#addRandom').popover({ placement: 'bottom' });
+        });
+    </script>
+
+
+</body>
+
+</html>
